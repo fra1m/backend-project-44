@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import {whatName} from './src/cli.js';
+import {whatName} from "../src/cli.js";
 
-whatName()
+
+console.log(whatName())
