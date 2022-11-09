@@ -13,6 +13,9 @@ brain-even:
 brain-calc:
 	node: bin/brain-calc.js
 
+brain-gcd:
+	node: bin/brain-gcd.js
+
 publish:
 	npm publish --dry-run
 

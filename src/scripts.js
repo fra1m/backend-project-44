@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
 import _ from 'lodash';
 import whatName from './cli.js';
-import result from './index.js';
+import { result, NOD } from './index.js';
 
-export { even, calculator };
+export { even, calculator, findGCD };
 
 const even = () => {
   const name = whatName();
@@ -28,6 +28,22 @@ const calculator = () => {
     let realAnswer = num1 + num2;
     realAnswer = String(realAnswer);
     const answer = readlineSync.question(`Qustion: ${num1} + ${num2} `);
+    if (result(realAnswer, answer, name) === false) {
+      return;
+    }
+  }
+  console.log(`Congratulations, ${name}!`);
+};
+
+const findGCD = () => {
+  const name = whatName();
+  console.log('Find the greatest common divisor of given numbers.');
+  for (let i = 0; i < 3; i++) {
+    const num1 = _.random(1, 100);
+    const num2 = _.random(1, 100);
+    let realAnswer = NOD(num1, num2);
+    realAnswer = String(realAnswer);
+    const answer = readlineSync.question(`Qustion: ${num1} ${num2} `);
     if (result(realAnswer, answer, name) === false) {
       return;
     }
