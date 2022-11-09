@@ -21,3 +21,6 @@ make lint:
 
 make fix:
 	npx eslint --fix .
+
+rec:
+	asciinema rec
