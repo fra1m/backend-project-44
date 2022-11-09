@@ -1,7 +1,7 @@
 import _ from 'lodash';
 
 export {
-  result, NOD, randomArray, randomRealAnswer,
+  result, NOD, randomArray, randomRealAnswer, randomPrimeNums,
 };
 
 const result = (realAnswer, answer, name) => {
@@ -41,4 +41,13 @@ const randomRealAnswer = (mass) => {
   const realAnswer = mass[missedIndex];
 
   return String(realAnswer);
+};
+
+const randomPrimeNums = (primeOrNot) => {
+  for (let i = 2; i < primeOrNot; i++) {
+    if (primeOrNot % i === 0) {
+      return 'no';
+    }
+  }
+  return 'yes';
 };

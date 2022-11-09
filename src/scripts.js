@@ -2,11 +2,11 @@ import readlineSync from 'readline-sync';
 import _ from 'lodash';
 import whatName from './cli.js';
 import {
-  result, NOD, randomArray, randomRealAnswer,
+  result, NOD, randomArray, randomRealAnswer, randomPrimeNums,
 } from './index.js';
 
 export {
-  even, calculator, findGCD, progression,
+  even, calculator, findGCD, progression, prime,
 };
 
 const even = () => {
@@ -63,6 +63,20 @@ const progression = () => {
     const realAnswer = randomRealAnswer(mass);
     mass[mass.indexOf(Number(realAnswer))] = '..';
     const answer = readlineSync.question(`Qustion: ${mass} `);
+    if (result(realAnswer, answer, name) === false) {
+      return;
+    }
+  }
+  console.log(`Congratulations, ${name}!`);
+};
+
+const prime = () => {
+  const name = whatName();
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+  for (let i = 0; i < 3; i++) {
+    const primeOrNot = _.random(2, 10);
+    const realAnswer = randomPrimeNums(primeOrNot);
+    const answer = readlineSync.question(`Qustion: ${primeOrNot} `);
     if (result(realAnswer, answer, name) === false) {
       return;
     }

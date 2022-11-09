@@ -12,3 +12,6 @@ https://asciinema.org/a/hOtSjXIMy0gRC77t3Utg44S38
 
 ### BRAIN-PROGRESSION
 https://asciinema.org/a/gifRThVFtzeCThv2Z1bIUbFN2
+
+###BRAIN-PRIME
+https://asciinema.org/a/ZELh6Tmo7qVhmbR47HpnUQBJQ
