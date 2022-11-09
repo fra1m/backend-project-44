@@ -1,6 +1,9 @@
 import readlineSync from 'readline-sync';
 import _ from 'lodash';
 import whatName from './cli.js';
+import result from './index.js';
+
+export { even, calculator };
 
 const even = () => {
   const name = whatName();
@@ -9,13 +12,25 @@ const even = () => {
     const num = _.random(1, 100);
     const realAnswer = (num % 2 === 0) ? 'yes' : 'no';
     const answer = readlineSync.question(`Qustion: ${num} `);
-    console.log(`Your answer: ${answer}`);
-    if (realAnswer === answer) {
-      console.log('Correct!');
-    } else {
-      return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${realAnswer}'. \nLet's try again, ${name}!`);
+    if (result(realAnswer, answer, name) === false) {
+      return;
     }
   }
-  return console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
 };
-export default even;
+
+const calculator = () => {
+  const name = whatName();
+  console.log('What is the result of the expression?');
+  for (let i = 0; i < 3; i++) {
+    const num1 = _.random(1, 100);
+    const num2 = _.random(1, 100);
+    let realAnswer = num1 + num2;
+    realAnswer = String(realAnswer);
+    const answer = readlineSync.question(`Qustion: ${num1} + ${num2} `);
+    if (result(realAnswer, answer, name) === false) {
+      return;
+    }
+  }
+  console.log(`Congratulations, ${name}!`);
+};

@@ -9,6 +9,7 @@ parserOptions:
 rules:
   no-console: 0
   no-plusplus: 0
+  no-use-before-define: 0
   import/extensions:
     - error
     - ignorePackages
