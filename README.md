@@ -4,9 +4,9 @@
 ### INSTALL
 $ make install
 
-### The game BRAIN-EVEN
+# The game BRAIN-EVEN
 ## Description
-# Check a random number for evenness
+### Check a random number for evenness
 https://asciinema.org/a/OQsy7ymeALxlV77fo2ITPMeIL
 
 ### BRAIN-CALC
