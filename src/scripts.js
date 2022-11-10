@@ -62,7 +62,7 @@ const progression = () => {
     const mass = randomArray();
     const realAnswer = randomRealAnswer(mass);
     mass[mass.indexOf(Number(realAnswer))] = '..';
-    const answer = readlineSync.question(`Question: ${mass} `);
+    const answer = readlineSync.question(`Question: ${String(mass).replace(/\,/g," ")} `);
     if (result(realAnswer, answer, name) === false) {
       return;
     }
