@@ -1,10 +1,10 @@
-# Hexlet tests and linter status:
+# The BRAIN-GAMES (console game):
 [![Actions Status](https://github.com/fra1m/backend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/fra1m/backend-project-44/actions)
 
 ## INSTALL
 $ make install
 
-# The game BRAIN-EVEN
+# The game BRAIN-EVEN:
 ## Description
 ### Check a random number for evenness
 ## How to run
@@ -12,7 +12,7 @@ $ brain-even
 ## Illustration
 https://asciinema.org/a/OQsy7ymeALxlV77fo2ITPMeIL
 
-# The game BRAIN-CALC
+# The game BRAIN-CALC:
 ## Description
 ### Calculate the value of an expression
 ## How to run
@@ -20,7 +20,7 @@ $ brain-calc
 ## Illustration
 https://asciinema.org/a/Pb8u9wmfJ2xHD1ZnzTYuEIQ5c
 
-# BRAIN-GCD
+# BRAIN-GCD:
 ## Description
 ### Find the great common divisor of two numbers
 ## How to run
@@ -28,7 +28,7 @@ $ brain-gcd
 ## Illustration
 https://asciinema.org/a/hOtSjXIMy0gRC77t3Utg44S38
 
-# BRAIN-PROGRESSION
+# BRAIN-PROGRESSION:
 ## Description
 ### Insert the appropriate number of the arithmetic progression
 ## How to run
@@ -36,7 +36,7 @@ $ brain-progression
 ## Illustration
 https://asciinema.org/a/gifRThVFtzeCThv2Z1bIUbFN2
 
-# BRAIN-PRIME
+# BRAIN-PRIME:
 ## Description
 ### Check if a random number is prime
 ## How to run
