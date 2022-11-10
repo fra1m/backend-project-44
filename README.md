@@ -1,4 +1,6 @@
 # The BRAIN-GAMES (console game):
+<a href="https://codeclimate.com/github/fra1m/backend-project-44/maintainability"><img 
+src="https://api.codeclimate.com/v1/badges/f208403fee9b008d1427/maintainability" /></a>
 [![Actions Status](https://github.com/fra1m/backend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/fra1m/backend-project-44/actions)
 
 ## INSTALL
