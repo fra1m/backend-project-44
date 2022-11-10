@@ -1,7 +1,12 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/fra1m/backend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/fra1m/backend-project-44/actions)
 
-### BRAIN-EVEN
+### INSTALL
+$ make install
+
+### The game BRAIN-EVEN
+## Description
+# Check a random number for evenness
 https://asciinema.org/a/OQsy7ymeALxlV77fo2ITPMeIL
 
 ### BRAIN-CALC
