@@ -11,7 +11,7 @@ export {
 
 const even = () => {
   const name = whatName();
-  console.log('Answer \'yes\' if number even otherwise answer \'no\'.');
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i++) {
     const num = _.random(1, 100);
     const realAnswer = (num % 2 === 0) ? 'yes' : 'no';
