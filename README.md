@@ -7,9 +7,17 @@ $ make install
 # The game BRAIN-EVEN
 ## Description
 ### Check a random number for evenness
+## How to run
+$ brain-even
+## Illustration
 https://asciinema.org/a/OQsy7ymeALxlV77fo2ITPMeIL
 
-### BRAIN-CALC
+# The game BRAIN-CALC
+## Description
+### Calculate the value of an expression
+## How to run
+$ brain-calc
+## Illustration
 https://asciinema.org/a/Pb8u9wmfJ2xHD1ZnzTYuEIQ5c
 
 ### BRAIN-GCD
