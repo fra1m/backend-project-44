@@ -15,7 +15,7 @@ const even = () => {
   for (let i = 0; i < 3; i++) {
     const num = _.random(1, 100);
     const realAnswer = (num % 2 === 0) ? 'yes' : 'no';
-    const answer = readlineSync.question(`Qustion: ${num} `);
+    const answer = readlineSync.question(`Question: ${num} `);
     if (result(realAnswer, answer, name) === false) {
       return;
     }
@@ -31,7 +31,7 @@ const calculator = () => {
     const num2 = _.random(1, 100);
     let realAnswer = num1 + num2;
     realAnswer = String(realAnswer);
-    const answer = readlineSync.question(`Qustion: ${num1} + ${num2} `);
+    const answer = readlineSync.question(`Question: ${num1} + ${num2} `);
     if (result(realAnswer, answer, name) === false) {
       return;
     }
@@ -47,7 +47,7 @@ const findGCD = () => {
     const num2 = _.random(1, 100);
     let realAnswer = NOD(num1, num2);
     realAnswer = String(realAnswer);
-    const answer = readlineSync.question(`Qustion: ${num1} ${num2} `);
+    const answer = readlineSync.question(`Question: ${num1} ${num2} `);
     if (result(realAnswer, answer, name) === false) {
       return;
     }
@@ -62,7 +62,7 @@ const progression = () => {
     const mass = randomArray();
     const realAnswer = randomRealAnswer(mass);
     mass[mass.indexOf(Number(realAnswer))] = '..';
-    const answer = readlineSync.question(`Qustion: ${mass} `);
+    const answer = readlineSync.question(`Question: ${mass} `);
     if (result(realAnswer, answer, name) === false) {
       return;
     }
@@ -76,7 +76,7 @@ const prime = () => {
   for (let i = 0; i < 3; i++) {
     const primeOrNot = _.random(2, 10);
     const realAnswer = randomPrimeNums(primeOrNot);
-    const answer = readlineSync.question(`Qustion: ${primeOrNot} `);
+    const answer = readlineSync.question(`Question: ${primeOrNot} `);
     if (result(realAnswer, answer, name) === false) {
       return;
     }
